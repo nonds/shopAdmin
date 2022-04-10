@@ -20,5 +20,12 @@ export default defineConfig({
     alias: {
       '@': pathResolve('src')
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/styles/variables.scss";'
+      }
+    }
   }
 })
