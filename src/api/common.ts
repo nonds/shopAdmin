@@ -15,6 +15,7 @@ export const getLoginInfo = () => {
     method: 'GET',
     url: '/login/info'
   })
+
 //   return request.get<ResponseData<{
 //     slide:string[]
 //     logo_square:string

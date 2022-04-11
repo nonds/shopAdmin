@@ -23,6 +23,7 @@ request.interceptors.response.use(function (response) {
   return Promise.reject(error)
 })
 
+//
 export default <T = any>(config:AxiosRequestConfig) => {
   return request(config).then(res => {
     return res.data.data as T
