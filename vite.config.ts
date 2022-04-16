@@ -27,5 +27,15 @@ export default defineConfig({
         additionalData: '@import "@/styles/variables.scss";'
       }
     }
+  },
+  server: {
+    proxy: {
+      // 选项写法
+      '/admin': {
+        target: 'https://elm.cangdu.org',
+        changeOrigin: true
+        // rewrite: (path) => path.replace(/^\/api/, '')
+      }
+    }
   }
 })

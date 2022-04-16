@@ -1,4 +1,13 @@
+/* eslint-disable camelcase */
+/* eslint-disable no-unused-vars */
 /// <reference types="vite/client" />
+interface ImportMetaEnv {
+  readonly VITE_APP_BASE_URl:string
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
 
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
